@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Form</title>
+  <style>
+    /* Body styling */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #34343c ;
+  padding: 40px;
+}
+
+/* Heading styling */
+h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #fcbc74 ;
+  margin-bottom: 40px;
+  font-family: 'Trajan Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* Form styling */
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Field label styling */
+label {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Field input styling */
+select, input[type="number"] {
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Field input styling for select fields */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-512.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 20px;
+  padding-right: 50px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  font-size: 24px;
+  background-color: #940404;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #940404 ;
+}
+
+  </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Titanic Passenger Information</title>
+      </head>
+      <body>
+        <h1>Titanic Passenger Information</h1>
+        <form>
+          <p>
+            <label for="class">Ticket Class:</label>
+            <select id="class" name="class">
+              <option value="1">First Class</option>
+              <option value="2">Second Class</option>
+              <option value="3">Third Class</option>
+            </select>
+          </p>
+          <p>
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </p>
+          <p>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="150">
+          </p>
+          <p>
+            <label for="sibsp">Number of Siblings/Spouse:</label>
+            <input type="number" id="sibsp" name="sibsp" min="0">
+          </p>
+          <p>
+            <label for="parch">Number of Parents/Children:</label>
+            <input type="number" id="parch" name="parch" min="0">
+          </p>
+          <p>
+            <label for="embark">Port of Embarkation:</label>
+            <select id="embark" name="embark">
+              <option value="C">Cherbourg</option>
+              <option value="Q">Queenstown</option>
+              <option value="S">Southampton</option>
+            </select>
+          </p>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </body>
+    </html>
+    
+</body>
+</html>
